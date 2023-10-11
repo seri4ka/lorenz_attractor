@@ -5,7 +5,6 @@ import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
 
-
 class Simulator:
     def __init__(self, object: object, *args) -> object:
         self.lorenz = object

@@ -34,5 +34,3 @@ class LorenzDinamics:
         z = state[0] * state[1] - self.beta * state[2] + np.random.normal(0, self.xnoise, 1)[0]
         return x, y, z
     
-    def __call__(self, t: float, state: list):
-        return self.sigma * (self.y0 - self.x0), self.ro * self.x0 - self.y0 - self.x0 * self.z0, self.x0 * self.y0 - self.beta * self.z0
